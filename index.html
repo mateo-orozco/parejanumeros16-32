@@ -11,8 +11,8 @@
     <div class="container">
     <div class="tablero">
         <h1>JUEGO DE MEMORIA</h1>
-        <table>
-     <tr>
+        <table id="tabla">
+     <!-- <tr>
        <td> <button id="0" onclick="destapar(0)"></button></td>
         <td><button id="1" onclick="destapar(1)"></button></td>
         <td><button id="2" onclick="destapar(2)"></button></td>
@@ -35,14 +35,20 @@
         <td><button id="13" onclick="destapar(13)"></button></td>
         <td><button id="14" onclick="destapar(14)"></button></td>
         <td><button id="15" onclick="destapar(15)"></button></td>
-    </tr>
+    </tr> -->
+
 </table>
     </div>
     <div class="resultados">
         <h2 id="aciertos" >ACIERTOS</h2>
         <h2 id="tiempo">TIEMPO</h2>
         <h2 id="movimientos">MOVIMIENTOS</h2>
-        <button id="reset" onclick="reset()"  >REINICIAR</button>
+        <div>
+            <label for="cantidad16"><input type="radio" name="cantidad" id="cantidad16" class="cantidad" > 16 tarjetas</label>
+            <label for="cantidad32"><input type="radio" name="cantidad" id="cantidad32" class="cantidad"> 32 tarjetas</label>
+        </div>
+        <button id="reset" class="start" onclick="start()"  >Aceptar</button>
+        <button id="reset" onclick="reset()"  >Reiniciar</button>
     </div>
 </div>
 <footer>
